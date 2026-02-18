@@ -1,132 +1,51 @@
-Kanban Board Pro
+# Kanban Board Pro
 
-A real-time Kanban board built with the MERN stack and Socket.IO.
+A real-time Kanban board built with the **MERN stack** and **Socket.IO**.
 
 This project focuses on collaborative task management, real-time synchronization, and clean frontend architecture.
 
+---
 
+## Features
 
+- Real-time updates using **Socket.IO**
+- Drag and drop with **@dnd-kit**
+- MongoDB persistence (local or Atlas)
+- Optimistic UI updates
+- Responsive, clean **SaaS-style** interface
+- Unit testing (**Vitest**) and E2E testing (**Playwright**)
 
-Features
+---
 
-Real-time updates using Socket.IO
+## Tech Stack
 
-Drag and drop with @dnd-kit
+### Frontend
 
-MongoDB persistence (local or Atlas)
+- **React 18 (Vite)**
+- Custom CSS design system (SaaS-style tokens)
+- **Socket.IO Client**
+- **@dnd-kit** (Drag & Drop)
+- **Recharts** (Analytics)
+- **Vitest + Playwright**
 
-Optimistic UI updates
+### Backend
 
-Responsive, clean SaaS-style interface
+- **Node.js + Express**
+- **MongoDB (Mongoose)**
+- **Socket.IO**
+- **Helmet + CORS**
 
-Unit testing (Vitest) and E2E testing (Playwright)
+---
 
-Tech Stack
-Frontend
+## Getting Started
 
-React 18 (Vite)
+### Prerequisites
 
-Custom CSS design system (SaaS-style tokens)
+- Node.js v16+
+- MongoDB (Local instance or Atlas URI)
 
-Socket.IO Client
+### Installation
 
-@dnd-kit (Drag & Drop)
-
-Recharts (Analytics)
-
-Vitest + Playwright
-
-Backend
-
-Node.js + Express
-
-MongoDB (Mongoose)
-
-Socket.IO
-
-Helmet + CORS
-
-Getting Started
-Prerequisites
-
-Node.js v16+
-
-MongoDB (Local instance or Atlas URI)
-
-Installation
+```bash
 git clone https://github.com/itsmrajguru/KanbanBoardPro.git
 cd KanbanBoardPro
-
-
-Install backend dependencies:
-
-cd backend
-npm install
-
-
-Install frontend dependencies:
-
-cd ../frontend
-npm install
-
-Environment Variables (Backend)
-
-Create a .env file inside /backend:
-
-PORT=5000
-MONGO_URI=mongodb+srv://<your-mongo-uri>
-CLIENT_ORIGIN=http://localhost:3000
-
-Run Locally
-
-Start backend:
-
-cd backend
-npm start
-
-
-Start frontend:
-
-cd frontend
-npm run dev
-
-
-Backend runs on:
-http://localhost:5000
-
-Frontend runs on:
-http://localhost:3000
-
-Project Structure
-KanbanBoardPro/
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── services/
-│   │   └── sockets/
-│   ├── server.js
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── hooks/
-│   │   ├── App.jsx
-│   │   └── index.css
-│   ├── tests/
-│   └── package.json
-│
-└── README.md
-
-Deployment
-
-Backend can be deployed to platforms like Render or Railway.
-Frontend can be deployed to Vercel or Netlify.
-
-Ensure environment variables are properly configured during deployment.
-
-License
-
-MIT © Mangesh Rajguru
