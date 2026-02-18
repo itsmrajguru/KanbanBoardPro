@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+playwright-report/
+test-results/
+
+# Production
+build/
+dist/
+
+# Environment Variables (Protect Secrets!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+npm-debug.log*
+
+# OS & Generic
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backend specific
+backend/start.bat
+*.pid
+*.seed
+*.pid.lock
+
+# Frontend specific
+frontend/.eslintcache
